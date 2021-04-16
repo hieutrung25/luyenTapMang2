@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let charaterArr = ["4", 4, "6", "z", "M", "q", 2, "j"];
+    let result = charaterArr.reduce(function(sum, element) {
+        return (
+            sum +
+            (typeof element === "string" && element >= "1" && element <= "9")
+        );
+    }, 0);
+    document.write("Số ký tự số trong mảng là " + result);
+</script>
+
+</body>
+</html>
